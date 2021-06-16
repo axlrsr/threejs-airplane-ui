@@ -15,4 +15,5 @@ npm run dev
 npm run build
 ```
 
+## Credit
 Original design by [@carlhauser](https://www.instagram.com/p/CMIyVFmgHvU/)
