@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airplane</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <canvas class="webgl"></canvas>
+  
+  <div class="coords">
+    <p class="coords__numbers">139° 46' 47'' E</p>
+    <div class="coords__cardinal">
+      <span>W</span>
+      <span>NW</span>
+      <span>N</span>
+      <span>NE</span>
+    </div>
+    <div class="coords__lines">
+      <div class="coords__line--high"></div>
+      <div class="coords__line--low"></div>
+      <div class="coords__line--high"></div>
+      <div class="coords__line--low"></div>
+      <div class="coords__line--high"></div>
+      <div class="coords__line--high"></div>
+      <div class="coords__line--high"></div>
+      <div class="coords__line--low"></div>
+      <div class="coords__line--high"></div>
+    </div>
+    <div class="coords__arrow">
+      <span class="material-icons">arrow_drop_up</span>
+    </div>
+  </div>
+
+  <div class="general">
+    <p class="general__hour">
+			<span class="general__hour__hh">00</span>
+			<span class="general__hour__dots">:</span>
+			<span class="general__hour__mm">00</span>
+		</p>
+    <div class="general__music">
+      <div class="general__music__animation">
+        <div class="general__music__line"></div>
+        <div class="general__music__line"></div>
+        <div class="general__music__line"></div>
+      </div>
+      <div class="general__music__info">
+        <p class="general__music__artist">Tyler, The Creator</p>
+        <p class="general__music__title">See You Again</p>
+      </div>
+      <!-- <div class="general__music__cover"></div> -->
+    </div>
+  </div>
+
+  <div class="height">
+    <p class="height__text">Flightheight</p>
+    <p class="height__text">12.500 km</p>
+  </div>
+
+  <div class="destination">
+    <p>
+      <span class="destination__city">Okinawa</span>
+      <span class="destination__country">Japan</span>
+    </p>
+    <p class="destination__summary">
+      <span>HND</span>
+      <span class="material-icons">arrow_forward</span>
+      <span>OKA</span>
+    </p>
+  </div>
+
+  <div class="interface">
+    <div class="interface__top">
+      <p class="interface__coords">26° 12' 44'' N</p>
+			<svg version="1.1" id="Calque_1" class="interface__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+				<style type="text/css">
+					.st0{fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+					.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+				</style>
+				<path class="st0" d="M37.4,28.2C35.6,33.9,30.3,38,24,38c-6.2,0-11.5-4.1-13.3-9.7"/>
+				<path class="st0" d="M10.6,19.8C12.4,14.1,17.7,10,24,10c6.2,0,11.5,4.1,13.3,9.7"/>
+				<circle class="st1" cx="24" cy="24" r="3.5"/>
+				<line class="st1" x1="0" y1="24" x2="14" y2="24"/>
+				<line class="st1" x1="34" y1="24" x2="48" y2="24"/>
+			</svg>
+      <p class="interface__coords">26° 12' 44'' N</p>
+    </div>
+    <div class="interface__bottom">
+      <p class="interface__temp">23°C</p>
+    </div>
+  </div>
+</body>
+</html>

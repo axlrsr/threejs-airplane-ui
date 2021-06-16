@@ -1,0 +1,242 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+	height: 100%;
+  overflow: hidden;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  padding: 0 1rem 1rem;
+	max-width: 550px;
+	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: 0;
+}
+
+canvas.webgl {
+	position: fixed;
+	top: 0;
+	left: 0;
+	outline: none;
+}
+
+body>div {
+	transform: scaleX(0);
+}
+
+body>div>* {
+	opacity: 0;
+}
+
+/************************/
+/******** COORDS ********/
+/************************/
+
+/* .coords {
+  border: solid red 1px;
+} */
+
+.coords__numbers {
+  text-align: center;
+  font-size: .5rem;
+  margin: .5rem 0;
+  letter-spacing: .1rem;
+}
+
+.coords__cardinal {
+  display: flex;
+  justify-content: space-around;
+  font-size: .5rem;
+  margin-bottom: .25rem;
+}
+
+.coords__lines {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: .25rem;
+  border-bottom: solid 1px black;
+}
+
+.coords__line--high,
+.coords__line--low   {
+  background: black;
+  width: 2px;
+}
+
+.coords__line--high {
+  height: .5rem;
+}
+
+.coords__line--low {
+  height: 2px;
+}
+
+.coords__arrow {
+  display: flex;
+  justify-content: center;
+}
+
+/*************************/
+/******** GENERAL ********/
+/*************************/
+
+.general {
+  border-bottom: solid 1px black;
+  padding-bottom: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.general__hour {
+  font-size: 2.5rem;
+  font-weight: 700;
+	display: flex;
+}
+
+.general__music {
+  display: flex;
+}
+
+.general__music__animation {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: .35rem;
+  margin-right: .5rem;
+}
+
+.general__music__line {
+  height: .65rem;
+  width: 3px;
+  margin-right: 1px;
+  background: black;
+	transform-origin: bottom;
+	transform: scaleY(0.1);
+}
+
+.general__music__artist {
+  text-align: right;
+  font-weight: 700;
+}
+
+.general__music__title {
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* .general__music__cover {
+  background: red;
+  padding-top: 100%;
+} */
+
+/************************/
+/******** HEIGHT ********/
+/************************/
+
+.height {
+  border-bottom: solid 1px black;
+  padding: .5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.height__text {
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+/*****************************/
+/******** DESTINATION ********/
+/*****************************/
+
+.destination {
+  border-bottom: solid 1px black;
+  padding: .25rem 0 3rem;
+}
+
+.destination__city {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-right: .25rem;
+}
+
+.destination__country {
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: .75rem;
+  padding: .1rem .35rem 0;
+  padding-right: 1.5rem;
+}
+
+.destination__summary {
+  display: flex;
+  align-items: center;
+}
+
+.destination__summary span {
+  font-size: 1rem;
+  margin-right: .25rem;
+}
+
+/***************************/
+/******** INTERFACE ********/
+/***************************/
+
+.interface {
+  position: relative;
+  flex-grow: 1;
+  /* border: solid 1px red; */
+}
+
+.interface__top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .5rem;
+}
+
+.interface__coords {
+  font-size: .5rem;
+  letter-spacing: .1rem;
+}
+
+.interface__icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.interface__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.interface__temp {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
