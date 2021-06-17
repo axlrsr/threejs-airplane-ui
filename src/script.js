@@ -1,8 +1,5 @@
 import './style.css'
-// import './animation.js'
 import * as THREE from 'three'
-// import waterVertexShader from './shaders/water/vertex.glsl'
-// import waterFragmentShader from './shaders/water/fragment.glsl'
 import gsap from 'gsap'
 import terrainVertexShader from './shaders/terrain/vertex.glsl'
 import terrainFragmentShader from './shaders/terrain/fragment.glsl'
@@ -18,7 +15,6 @@ gsap.timeline().to("body>div", {
 }).to("body>div>*", {
     opacity: 1,
     duration: 1,
-    // delay: -0.6,
     stagger: 0.1
 }).to('.overlay', {
     background: 'transparent',
@@ -120,10 +116,6 @@ const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.1, 
 camera.position.z = 2
 scene.add(camera)
 
-// Controls
-// const controls = new OrbitControls(camera, canvas)
-// controls.enableDamping = true
-
 /**
  * Renderer
  */
@@ -142,9 +134,6 @@ const clock = new THREE.Clock()
 const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
-
-    // Update controls
-    // controls.update()
 
     // Update material
     material.uniforms.uTime.value = elapsedTime
