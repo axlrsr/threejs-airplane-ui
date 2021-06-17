@@ -18,8 +18,11 @@ gsap.timeline().to("body>div", {
 }).to("body>div>*", {
     opacity: 1,
     duration: 1,
-    delay: -0.6,
+    // delay: -0.6,
     stagger: 0.1
+}).to('.overlay', {
+    background: 'transparent',
+    duration: 1
 })
 
 // Music
