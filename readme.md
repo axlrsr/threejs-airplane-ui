@@ -1,5 +1,5 @@
 # Airplane UI
-
+![Airplane UI](https://raw.githubusercontent.com/axlrsr/threejs-airplane-ui/master/static/social/share-1280x800.png)
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
 Run this followed commands:
